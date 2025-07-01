@@ -1,0 +1,16 @@
+# YouTube Batch Video Downloader Dependencies
+# Core dependencies for get_video.py
+
+# YAML parsing library for configuration files
+PyYAML>=6.0
+
+# YouTube video downloader - actively maintained fork of youtube-dl
+yt-dlp>=2023.12.30
+
+# Standard library modules (included with Python 3.6+):
+# - sys (command-line arguments)
+# - os (file/directory operations) 
+# - subprocess (executing yt-dlp commands)
+# - json (parsing video metadata)
+# - pathlib (modern path handling)
+# - typing (type hints)

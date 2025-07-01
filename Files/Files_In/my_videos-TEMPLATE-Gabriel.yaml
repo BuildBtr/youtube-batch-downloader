@@ -1,0 +1,31 @@
+### Note! ### The "Hashtag" Symbol lets you write notes that don't mess up the program!
+##### EXAMPLE
+"
+videos:
+  - url: https://www.youtube.com/watch?v=ZGTP4P1IRkA # Video Author .&ab_channel=AIandTechforEducation 
+    title: # Use the Videos's name from the YouTube video as it appears.
+    author: # Use the Creator's name from the YouTube video as it appears.
+    save_directory: /Users/gabriel/Movies/Media/Resource-Videos/ #Missing the '-'
+"
+########################################################################################################
+##### 
+videos:
+  - url: https://www.youtube.com/watch?v=ZGTP4P1IRkA
+    title: 10 Prompt Hacks to Instantly Master Deep Research!
+    author: AI and Tech for Education
+    save_directory: /Users/gabriel/Movies/Media/Resource-Videos/AIandTechforEducation/DeepResearch-Tutorials/
+
+  - url: 
+    title: 
+    author: 
+    save_directory: /Users/gabriel/Movies/Media/Entertainment/
+
+  - url: https://www.youtube.com/watch?v=oJukNTgHns4
+    title: BEGINNER Laser Engraving and cutting tutorial with the Sculpfun S9
+    author: Small Fry Creations
+    save_directory: /Users/gabriel/Movies/Media/WoodWorking/Small-Fry-Creations/Laser-Engraving-Tutorials/
+
+  - url: https://www.youtube.com/watch?v=jsWlOp8tGDs &ab_channel=fallenintocamping
+    title: RV Water Damage Repair: Demo Day 9 Front Cap & Roof
+    author: Fallen into Camping
+    save_directory: /Users/gabriel/Movies/Media/RV-Repairs/Fallen-into-Camping/Water-Damage-Repairs/

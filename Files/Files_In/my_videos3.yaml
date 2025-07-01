@@ -1,0 +1,25 @@
+videos:
+  - url: https://www.youtube.com/watch?v=Pgp_KGFL0FA
+    title: Outperform 99% Of Vibe Coders With This Planning Method
+    author: Sean Kochel
+    save_directory: /home/ivan/Videos/VibeCoding/Sean_Kochel
+
+  - url: https://www.youtube.com/watch?v=Y8v9EdmDwck
+    title: Vibe Code Like The Top 1% | Framework UPDATE
+    author: Sean Kochel
+    save_directory: /home/ivan/Videos/VibeCoding/Sean_Kochel
+
+  - url: https://www.youtube.com/watch?v=iLCDSY2XX7E
+    title: Vibe Coding Fundamentals In 33 minutes
+    author: Tina Huang
+    save_directory: /home/ivan/Videos/VibeCoding/Tina_Huang
+
+  - url: https://www.youtube.com/watch?v=jmQq7T0U2LE
+    title: Steal This Prompt Framework to Build Your App MVP in Minutes (Step by Step Guide)
+    author: Build Great Products
+    save_directory: /home/ivan/Videos/VibeCoding/Build_Great_Products
+
+  - url: https://www.youtube.com/watch?v=iGssgns9SAg
+    title: Why You Suck At Vibe Code & 10 Rules to Fix It
+    author: Rob Shocks
+    save_directory: /home/ivan/Videos/VibeCoding/Rob_Shocks
