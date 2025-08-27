@@ -223,14 +223,24 @@ The script uses these yt-dlp options by default:
 ```python
 cmd = [
     'yt-dlp',
-    '--format', 'best[height<=1080]',  # Best quality up to 1080p
-    '--output', '%(title)s.%(ext)s',   # Filename format
-    '--no-playlist',                   # Single video only
-    '--embed-subs',                    # Embed subtitles
-    '--write-auto-sub',               # Auto-generated subtitles
+    '--format', 'best[height<=1080][ext=mp4]/bestvideo[height<=1080]+bestaudio/best[height<=1080]/best',  # Ensure video+audio merge
+    '--merge-output-format', 'mp4',   # Force mp4 container for compatibility
+    '--output', '%(title)s.%(ext)s',  # Filename format
+    '--no-playlist',                  # Single video only
+    '--embed-subs',                   # Embed subtitles
+    '--write-auto-sub',              # Auto-generated subtitles
     url
 ]
 ```
+
+**Format Selection Explanation:**
+- `best[height<=1080][ext=mp4]`: Prefers single files with video+audio in mp4 format
+- `bestvideo[height<=1080]+bestaudio`: Falls back to merging separate video and audio streams
+- `best[height<=1080]`: General fallback for quality-limited downloads
+- `best`: Final fallback for any available format
+- `--merge-output-format mp4`: Ensures proper video+audio container format
+
+This advanced format selection prevents audio-only downloads that can occur with long-form content where YouTube separates video and audio streams.
 
 ### Customization Points
 

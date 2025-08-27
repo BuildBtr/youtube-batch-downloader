@@ -186,11 +186,14 @@ class YouTubeDownloader:
             # Build yt-dlp command
             cmd = [
                 'yt-dlp',
-                '--format', 'best[height<=1080]',  # Download best quality up to 1080p
+                '--format', 'best[height<=1080][ext=mp4]/bestvideo[height<=1080]+bestaudio/best[height<=1080]/best',  # Ensure video+audio merge
+                '--merge-output-format', 'mp4',  # Force mp4 container for compatibility
                 '--output', os.path.join(save_directory, '%(title)s.%(ext)s'),
                 '--no-playlist',  # Only download single video even if URL is part of playlist
                 '--embed-subs',   # Embed subtitles if available
                 '--write-auto-sub',  # Write auto-generated subtitles
+                '--sub-langs', 'en',  # Only download English subtitles to avoid rate limiting
+                '--ignore-errors',  # Continue on subtitle errors
                 url
             ]
             
